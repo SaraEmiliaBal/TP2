@@ -33,8 +33,9 @@ get_header();
 
 			</section>
 
-		<php endif; ?> 
-		?>
+		<?php endif; 
+		?> 
+		
 
 	</main><!-- #main -->
 
