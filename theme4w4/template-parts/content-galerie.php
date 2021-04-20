@@ -16,8 +16,6 @@
     </div>
     <div class="flip-card-back">
       <h1><a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a></h1> 
-      <p>Architect & Engineer</p> 
-      <p>We love that guy</p>
     </div>
   </div>
 </article>

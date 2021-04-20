@@ -1501,9 +1501,50 @@ header .entry-title {
 .galerie {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  margin: 3%;
 }
 
-.galerie article {
-  margin: 2%;
+.galerie .flip-card {
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+  perspective: 1000px;
+}
+
+.galerie .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.galerie .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.galerie .flip-card-front, .galerie .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.galerie .flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.galerie .flip-card-back {
+  background-color: #FDE0D9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.galerie h1 {
+  font-size: 0.7rem;
 }
 /*# sourceMappingURL=style.css.map */
