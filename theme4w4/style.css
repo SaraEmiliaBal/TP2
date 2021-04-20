@@ -1256,7 +1256,7 @@ Liste des blocs de cours par type_de_cours
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -1280,7 +1280,6 @@ Liste des blocs de cours par type_de_cours
 
 .carrousel-2 .slide__conteneur .slide .slide__info p {
   font-size: .8rem;
-  text-align: center;
 }
 
 .carrousel-2 .slide__conteneur .slide .slide__info a {

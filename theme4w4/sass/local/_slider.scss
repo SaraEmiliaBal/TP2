@@ -15,7 +15,8 @@
             width : 100%;
             display : flex;
             flex-direction: row;
-            justify-content: space-between;
+            //justify-content: space-between;
+            justify-content: center;
             align-items: center;
             @include tablet {
                & {
@@ -28,7 +29,6 @@
                 margin : 2%;
             }
             .slide__info{
-                //margin : 2%;
                 display : flex;
                 flex-direction: column;
                 justify-content: center;
@@ -36,7 +36,6 @@
                 
                 p{
                     font-size : .8rem;
-                    text-align: center;
                 }
                 a{
                     font-size : 1.2rem;
