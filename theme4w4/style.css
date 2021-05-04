@@ -647,6 +647,30 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+.site {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-areas: "header header" "main sidebar" "footer footer";
+}
+
+.site-header {
+  grid-area: header;
+}
+
+.site-main {
+  grid-area: main;
+  overflow: hidden;
+  /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.widget-area {
+  grid-area: sidebar;
+}
+
+.site-footer {
+  grid-area: footer;
+}
+
 .no-sidebar .site {
   display: grid;
   grid-template-columns: auto;
@@ -1503,6 +1527,7 @@ header .entry-title {
   flex-wrap: wrap;
   flex-direction: row;
   margin: 3%;
+  justify-content: space-between;
 }
 
 .galerie .flip-card {
@@ -1546,5 +1571,26 @@ header .entry-title {
 
 .galerie h1 {
   font-size: 0.7rem;
+}
+
+/* local footer
+--------------------------------------------- */
+site-branding, #primary, #colophon {
+  margin-left: 0rem;
+}
+
+.site-footer {
+  background-color: #E4C1F9;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  color: #FFF0F5;
+}
+
+.site-footer .ligne-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 /*# sourceMappingURL=style.css.map */

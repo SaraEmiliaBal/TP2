@@ -12,10 +12,16 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-
-				<?php if(is_active_sidebar('footer-1')): ?>
-					<?php dynamic_sidebar('footer-1'); ?>
-				<?php endif ?>
+		<div class="ligne-footer">
+			<?php if(is_active_sidebar('footer-1')): ?>
+				<?php dynamic_sidebar('footer-1'); ?>
+			<?php endif ?>
+		</div>
+		<div class="ligne-footer">
+			<?php if(is_active_sidebar('footer-2')): ?>
+				<?php dynamic_sidebar('footer-2'); ?>
+			<?php endif ?>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
