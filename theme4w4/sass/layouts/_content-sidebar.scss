@@ -1,10 +1,22 @@
 .site {
 	display: grid;
-	grid-template-columns: 80% 20%;
+
+	//VERSION MOBILE DU SIDEBAR
+	grid-template-columns: 100%;
 	grid-template-areas:
 		"header header"
-		"main sidebar"
+		"main main"
+		"sidebar sidebar"
 		"footer footer";
+
+	//VERSION DESKTOP DU SIDEBAR
+	@include desktop{
+		grid-template-columns: 80% 20%;
+		grid-template-areas:
+			"header header"
+			"main sidebar"
+			"footer footer";
+	}
 }
 
 .site-header {
@@ -22,12 +34,6 @@
 	margin-left: 2rem;
     background-color: #FDE0D9;
 }
-
-.widget-title{
-	margin-top: 5rem;
-	color: #2F4F4F;
-}
-
 
 .site-footer {
 	grid-area: footer;

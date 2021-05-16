@@ -649,8 +649,15 @@ textarea {
 --------------------------------------------------------------*/
 .site {
   display: grid;
-  grid-template-columns: 80% 20%;
-  grid-template-areas: "header header" "main sidebar" "footer footer";
+  grid-template-columns: 100%;
+  grid-template-areas: "header header" "main main" "sidebar sidebar" "footer footer";
+}
+
+@media (min-width: 1200px) {
+  .site {
+    grid-template-columns: 80% 20%;
+    grid-template-areas: "header header" "main sidebar" "footer footer";
+  }
 }
 
 .site-header {
@@ -668,11 +675,6 @@ textarea {
   grid-area: sidebar;
   margin-left: 2rem;
   background-color: #FDE0D9;
-}
-
-.widget-title {
-  margin-top: 5rem;
-  color: #2F4F4F;
 }
 
 .site-footer {
@@ -1658,5 +1660,15 @@ site-branding, #primary, #colophon {
 --------------------------------------------- */
 .entry-header .entry-title {
   font-size: 3rem;
+}
+
+/* local sidebar
+--------------------------------------------- */
+#secondary {
+  padding-left: 4%;
+}
+
+.widget-title {
+  color: #2F4F4F;
 }
 /*# sourceMappingURL=style.css.map */
