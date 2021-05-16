@@ -1694,6 +1694,12 @@ site-branding, #primary, #colophon {
   margin-top: 10px;
 }
 
+.admin-rapid button:hover {
+  background-color: #D8FDD8;
+  border: #2F4F4F;
+  cursor: pointer;
+}
+
 /* local page
 --------------------------------------------- */
 /*------------- AGRANDISSEMENT DES TITRES DES PAGES AUTRE QUE LA PAGE D'ACCUEIL  ---------------*/
