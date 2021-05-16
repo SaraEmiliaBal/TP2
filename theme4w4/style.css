@@ -1646,4 +1646,201 @@ site-branding, #primary, #colophon {
 
 /* local formulaire
 --------------------------------------------- */
+/* local page
+--------------------------------------------- */
+body.home {
+  height: 500vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body.home::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 500vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@media (min-width: 800px) {
+  body.home::after {
+    clip-path: polygon(61% 0, 100% 0, 100% 35%, 97% 10%, 87% 32%, 94% 8%, 72% 24%, 90% 6%, 62% 13%, 88% 2%);
+    background-color: #E5C8D5;
+  }
+}
+
+h1 {
+  color: #778899;
+  opacity: 50%;
+  margin-top: 5vh;
+}
+
+.page-header {
+  text-align: center;
+  font-size: 1.4rem;
+  text-shadow: 0.2em 0.2em 0.1em #696969;
+  /*------------- ANIMATION TITRES ARCHIVES ---------------*/
+  animation: anim-4 2s both 2s;
+}
+
+/*------------- ANIMATION TITRES ARCHIVES ---------------*/
+@keyframes anim-4 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+.home #primary {
+  width: 100vw;
+  margin: 0;
+}
+
+.home #primary header {
+  text-align: center;
+}
+
+.site-title {
+  font-family: "Montserrat", monospace;
+  font-weight: bold;
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 3rem);
+  margin-bottom: 0;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: #6D6875;
+}
+
+.site-description {
+  margin-top: 0;
+  font-family: "Montserrat", monospace;
+  font-weight: normal;
+  color: #7e2525;
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1.5rem);
+}
+
+.home .entry-header {
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 3rem);
+}
+
+/* --------------------------------------------------------------------------------------- 
+Liste des blocs de cours par type_de_cours
+------------------------------------------------------------------------------------------ */
+.home .cours {
+  display: flex;
+  flex-direction: column;
+}
+
+.home .cours h2 {
+  text-align: center;
+}
+
+.home .cours section.bloc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.home .cours section.bloc article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #FDE0D9;
+  background-color: #FFFAF0;
+  box-shadow: 8px 8px 12px #FDE0D9;
+  margin-top: 10vh;
+  width: 95%;
+  margin: 1%;
+  padding: 1rem;
+}
+
+.home .cours section.bloc article p {
+  margin: .4rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.home .cours section.bloc article a {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (min-width: 800px) {
+  .home .cours section.bloc article {
+    width: 47%;
+    margin: 1%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home .cours section.bloc article {
+    width: 31%;
+    margin: 1%;
+  }
+}
+
+.accueil {
+  font-size: clamp(0.7rem, -0.875rem + 8.333vw, 1.5rem);
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.accueil ul {
+  list-style-type: none;
+}
+
+.accueil .wp-block-image img {
+  margin: 0 auto;
+}
+
+/*------------- AJOUT SCSS SUR LES NOUVELLES 1, 2 ET 3  ---------------*/
+.nouvelles {
+  margin: 2% 4% 2% 3%;
+  /*------------- ANIMATION DES NOUVELLES 1, 2 ET 3  ---------------*/
+}
+
+.nouvelles figure {
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+  border: #EE82EE;
+  box-shadow: 5px 5px 8px #EE82EE, 10px 10px 8px CornflowerBlue, 15px 15px 8px MediumSpringGreen;
+  /*------------- ANIMATION DES NOUVELLES 1, 2 ET 3 ---------------*/
+  animation: anim-5 2s both 0.5s;
+}
+
+@keyframes anim-5 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.nouvelles p {
+  color: #008080;
+}
+
+.nouvelles section h2 {
+  color: #2F4F4F;
+}
 /*# sourceMappingURL=style.css.map */
