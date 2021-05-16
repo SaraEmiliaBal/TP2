@@ -32,4 +32,36 @@
         maRequete.send()
     }
 
+    /*
+    TRAITEMENT DE L'AJOUT D'UN ARTICLE DE CATÉGORI NOUVELLES
+    */
+
+    bouton_ajout = document.getElementById('bout-rapide')
+    bouton_ajout.addEventListener('mousedown', function(){
+        console.log('ajout')
+        let monArticle = {
+            "title" : document.querySelector('.admin-rapid [name="title"]').value,
+            "content" : document.querySelector('.admin-rapid [name="content"]').value,
+            "status" : "publish",
+            "categories" : [34]
+        }
+
+        console.log(JSON.stringify(monArticle))
+        let creerArticle = new XMLHttpRequest()
+        creerArticle.open("POST", 'http://localhost:8888/4w4-3/wp-json/wp/v2/posts')
+        creerArticle.setRequestHeader("Content-Type", "application/JSON;charset=UTF8-8")
+        creerArticle.send(JSON.stringify(monArticle)) //transmettre la requete au serveur (rest-api)
+        creerArticle.onreadystatechange = function(){
+            if(creerArticle.readyState == 4){
+                if(creerArticle.status == 201){
+                    document.querySelector('.admin-rapid [name="title"]').value = ''
+                    document.querySelector('.admin-rapid [name="content"]').value = ''
+                }
+                else{
+                    alert('Erreur réessayez')
+                }
+            }
+        }
+    })
+
 }())
