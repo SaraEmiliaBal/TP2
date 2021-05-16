@@ -9,6 +9,7 @@
 
 .site-header {
 	grid-area: header;
+	height: 32vh;
 }
 
 .site-main {
@@ -18,7 +19,15 @@
 
 .widget-area {
 	grid-area: sidebar;
+	margin-left: 2rem;
+    background-color: #FDE0D9;
 }
+
+.widget-title{
+	margin-top: 5rem;
+	color: #2F4F4F;
+}
+
 
 .site-footer {
 	grid-area: footer;
