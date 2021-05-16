@@ -10,7 +10,7 @@
     {
         let maRequete = new XMLHttpRequest();
         console.log(maRequete)
-        maRequete.open('GET', 'http://localhost:8888/4w4-3/wp-json/wp/v2/posts');
+        maRequete.open('GET', monObjJS.URLDomaine + '/wp-json/wp/v2/posts');
         maRequete.onload = function () {
             console.log(maRequete)
             if (maRequete.status >= 200 && maRequete.status < 400) {
@@ -48,7 +48,8 @@
 
         console.log(JSON.stringify(monArticle))
         let creerArticle = new XMLHttpRequest()
-        creerArticle.open("POST", 'http://localhost:8888/4w4-3/wp-json/wp/v2/posts')
+        creerArticle.open("POST", monObjJS.URLDomaine + '/wp-json/wp/v2/posts')
+        creerArticle.setRequestHeader("X-WP-Nonce", monObjJS.nonce)
         creerArticle.setRequestHeader("Content-Type", "application/JSON;charset=UTF8-8")
         creerArticle.send(JSON.stringify(monArticle)) //transmettre la requete au serveur (rest-api)
         creerArticle.onreadystatechange = function(){
