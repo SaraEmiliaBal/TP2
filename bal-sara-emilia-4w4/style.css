@@ -1289,6 +1289,34 @@ Liste des blocs de cours par type_de_cours
   color: #2F4F4F;
 }
 
+.admin-rapid {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-rapid h3 {
+  color: #696969;
+  text-align: center;
+}
+
+.admin-rapid input {
+  background-color: #D8FDD8;
+  border: 1px solid #8FBC8F;
+}
+
+.admin-rapid textarea {
+  background-color: #D8FDD8;
+  border: 1px solid #8FBC8F;
+  margin-top: 5px;
+}
+
+.admin-rapid button {
+  background-color: #8FBC8F;
+  border: #2F4F4F;
+  color: #2F4F4F;
+  margin-top: 10px;
+}
+
 /* local carrousel
 --------------------------------------------- */
 .carrousel {
@@ -1595,6 +1623,11 @@ header .entry-title {
   width: 150px;
   height: 150px;
   perspective: 1000px;
+  transform: scale(1);
+}
+
+.galerie .flip-card:hover {
+  transform: scale(1.5);
 }
 
 .galerie .flip-card-inner {

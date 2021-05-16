@@ -9,7 +9,6 @@
 
 get_header();
 ?>
-///////////////////////////////////////////////// CATEGORY-PROJETPERSONNEL.PHP
 	<main id="primary" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
