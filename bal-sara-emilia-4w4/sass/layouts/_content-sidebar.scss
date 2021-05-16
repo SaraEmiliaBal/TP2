@@ -1,6 +1,7 @@
 .site {
 	display: grid;
 
+	/*------------- AJOUT D'UNE VERSION MOBILE ET DESKTOP ---------------*/
 	//VERSION MOBILE DU SIDEBAR
 	grid-template-columns: 100%;
 	grid-template-areas:
@@ -29,6 +30,7 @@
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
+/*------------- AJOUT D'UNE COULEUR DE FOND POUR LE SIDEBAR  ---------------*/
 .widget-area {
 	grid-area: sidebar;
 	margin-left: 2rem;

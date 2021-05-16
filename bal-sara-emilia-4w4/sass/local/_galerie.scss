@@ -10,9 +10,11 @@
         width: 150px;
         height: 150px;
         perspective: 1000px;
+        /*------------- AJOUT D'ANIMATION DES IMAGES EN SCALE  ---------------*/
         transform: scale(1);
       }
 
+      /*------------- AJOUT D'ANIMATION DES IMAGES EN SCALE  ---------------*/
       .flip-card:hover{
         transform: scale(1.5);
       }
