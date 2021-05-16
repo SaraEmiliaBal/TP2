@@ -151,12 +151,15 @@ Liste des blocs de cours par type_de_cours
     }
 }
 
+/*------------- AJOUT SCSS SUR LES NOUVELLES 1, 2 ET 3  ---------------*/
 .nouvelles{
     margin: 2% 4% 2% 3%;
     
     figure{
         border: 1px solid;
         padding: 10px;
+        border-radius: 10px;
+        border: #EE82EE;
         box-shadow: 5px 5px 8px #EE82EE, 10px 10px 8px CornflowerBlue, 15px 15px 8px MediumSpringGreen;
         /*------------- ANIMATION DES NOUVELLES 1, 2 ET 3 ---------------*/
         animation: anim-5 2s both 0.5s;
@@ -168,7 +171,13 @@ Liste des blocs de cours par type_de_cours
         100%{opacity: 1; transform: scale(1)}
     }
 
-   
+    p{
+        color: #008080;
+    }
+
+    section h2{
+        color: #2F4F4F;
+    }
 }
 
 
