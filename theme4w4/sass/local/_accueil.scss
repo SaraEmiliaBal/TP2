@@ -136,5 +136,25 @@ Liste des blocs de cours par type_de_cours
     }
 }
 
+.accueil{
+    font-size: clamp(.7rem, #{"-0.875rem + 8.333vw"}, 1.5rem);
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+
+    ul{
+        list-style-type: none;
+    }
+
+    .wp-block-image img{
+        margin: 0 auto;
+    }
+}
+
+.nouvelles{
+    margin: 2% 4% 2% 3%;
+    section{}
+}
+
 
 

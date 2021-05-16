@@ -1,9 +1,10 @@
 (function(){
-    let bouton = document.getElementById('bout_nouvelles')
+    //let bouton = document.getElementById('bout_nouvelles')
     let nouvelles = document.querySelector('.nouvelles section')
-    console.log(bouton.id)
+    //console.log(bouton.id)
 
-    bouton.addEventListener('mousedown', monAjax)
+    //bouton.addEventListener('mousedown', monAjax)
+    window.addEventListener('load', monAjax)
 
 	function monAjax()
     {

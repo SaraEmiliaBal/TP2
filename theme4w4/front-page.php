@@ -59,7 +59,7 @@ get_header();
 			endwhile;?>
 			</section> <!-- fin section cours -->
 			<section class="nouvelles">
-				<button id="bout_nouvelles">Dernières Nouvelles</button>
+				<!-- button id="bout_nouvelles">Dernières Nouvelles</button -->
 				<section></section>
 			</section>
 		<?php endif; ?>
